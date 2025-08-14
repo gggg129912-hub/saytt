@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Айбек мырза Құрылыс компаниясы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Айбек мырза Құрылыс компаниясы</h1>
+            <p>Сапалы құрылыс – біздің басты мақсатымыз</p>
+            <a href="#projects" class="btn">Біздің жобалар</a>
+        </div>
+    </header>
+
+      <section id="services" class="container">
+        <h2>Қызметтер</h2>
+        <ul>
+            <li>Үй құрылысы</li>
+            <li>Кірпіш қалау</li>
+            <li>Ішкі әрлеу жұмыстары</li>
+            <li>Жобалау және дизайн</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Біздің жобалар</h2>
+        <div class="gallery">
+            <img src="img/house1.jpg" alt="Жоба 1" onclick="openLightbox(this.src)">
+            <img src="img/house2.jpg" alt="Жоба 2" onclick="openLightbox(this.src)">
+            <img src="img/house3.jpg" alt="Жоба 3" onclick="openLightbox(this.src)">
+            <img src="img/house4.jpg" alt="Жоба 4" onclick="openLightbox(this.src)">
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Байланыс</h2>
+        <p>Телефон: <a href="tel:+77025839790">+77025839790</a></p>
+        <p>Email: <a href="mailto:aybekmirza@mail.com">aybekmirza@mail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Айбек мырза құрылыс. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
